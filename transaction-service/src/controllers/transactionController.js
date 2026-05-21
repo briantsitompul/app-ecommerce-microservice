@@ -6,7 +6,7 @@ const axios = require('axios');
 
 
 const TransactionController = {
-createTra nsaction: async (req, res) => {
+create Transaction: async (req, res) => {
   const { customerId, items } = req.body;
 
   if (!customerId || !items || !Array.isArray(items) || items.length === 0) {
